@@ -1,18 +1,17 @@
 {
-    "builds": [
-      {
-        "src": "frontend/package.json",
-        "use": "@vercel/static-build",
-        "config": { "distDir": "build" }  // This should point to the new build directory
-      },
-      {
-        "src": "backend/app.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      { "src": "/api/(.*)", "dest": "backend/app.py" },
-      { "src": "/(.*)", "dest": "build/$1" }
-    ]
-  }
-  
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "build" }
+    },
+    {
+      "src": "backend/app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "backend/app.py" },
+    { "src": "/(.*)", "dest": "build/$1" }
+  ]
+}
