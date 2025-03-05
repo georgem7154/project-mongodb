@@ -4,7 +4,6 @@ import Benefits from "./Benefits";
 import Footer from "./Footer";
 import Locations from "./Locations";
 
-
 function App() {
   return (
     <div className="relative">
