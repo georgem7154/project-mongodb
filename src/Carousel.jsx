@@ -7,23 +7,22 @@ const Carousel = () => {
   useEffect(() => {
     // Fetch comments from the backend
     axios
-      .get("http://localhost:5000/api/comments")
+      .get("http://localhost:5000/api/string")
       .then((response) => {
-        console.log("Fetched comments:", response.data); // Log fetched data
+        console.log("Fetched string:", response.data); // Log fetched data
         setComments(response.data);
       })
       .catch((error) => {
-        console.error("There was an error fetching the comments!", error);
+        console.error("There was an error fetching the string!", error);
       });
   }, []);
 
   return (
     <div>
       {comments.length > 0 ? (
-        comments.map((comment) => (
-          <div key={comment.movie_id} className="comment">
-            <h2>{comment.name}</h2>
-            <p>{comment.text}</p>
+        comments.map((string) => (
+          <div key={string.id} className="string">
+            <h2>{string.text}</h2>
           </div>
         ))
       ) : (

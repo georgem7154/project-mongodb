@@ -15,26 +15,22 @@ CORS(app)
 mongo_uri = os.getenv("MONGODB_URI")
 
 client = MongoClient(mongo_uri)
-db = client["sample_mflix"]  # Use your database name
+db = client["hiraku"]  # Use your database name
 
 @app.route('/')
 def home():
-    return "Welcome to the MongoDB Comments API!"
+    return "Welcome to the MongoDB string API!"
 
-@app.route('/api/comments', methods=['GET'])
+@app.route('/api/string', methods=['GET'])
 def get_comments():
-    comments = db["comments"].find()
+    comments = db["string"].find()
     result = []
     for comment in comments:
         result.append({
-            'name': comment['name'],
-            'email': comment['email'],
-            'movie_id': str(comment['movie_id']),
+            'id': str(comment['_id']),
             'text': comment['text'],
-            'date': comment['date']
         })
     return jsonify(result)
-
 
 if __name__ == "__main__":
     app.run(debug=True)
