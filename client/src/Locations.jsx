@@ -34,6 +34,7 @@ const Locations = () => {
           alt="placeholder"
           className="rounded-xl w-full h-full"
         />
+        <h1 className="justify-end font-montserrat text-center">INDIA</h1>
       </div>
       <div className="w-2/12  h-full">
         <img
@@ -41,6 +42,7 @@ const Locations = () => {
           alt="placeholder"
           className="rounded-xl w-full h-full"
         />
+        <h1 className="justify-end font-montserrat text-center">PARIS</h1>
       </div>
       <div className="w-2/12  h-full">
         <img
@@ -48,6 +50,7 @@ const Locations = () => {
           alt="placeholder"
           className="rounded-xl w-full h-full"
         />
+        <h1 className="justify-end font-montserrat text-center">JAPAN</h1>
       </div>
       <div className="w-2/12  h-full">
         <img
@@ -55,6 +58,7 @@ const Locations = () => {
           alt="placeholder"
           className="rounded-xl w-full h-full"
         />
+        <h1 className="justify-end font-montserrat text-center">MEXICO</h1>
       </div>
     </div>
   );
