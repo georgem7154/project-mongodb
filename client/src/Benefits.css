@@ -1,0 +1,47 @@
+.benefits-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1200px; /* Adjust as needed */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-section h2 {
+    text-align: center;
+    color: #007BFF; /* Change this to your desired color */
+    margin-bottom: 50px;
+}
+
+.benefits-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line on smaller screens */
+    justify-content: space-between; /* Space between boxes */
+}
+
+.benefit {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px; /* Space between boxes */
+    flex: 1 1 calc(20% - 20px); /* Adjusts the width of each box */
+    min-width: 200px; /* Minimum width for responsiveness */
+    max-width: 250px; /* Maximum width for larger screens */
+    text-align: center; /* Center text */
+}
+
+.benefit-icon {
+    font-size: 40px; /* Adjust size as needed */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+.benefit-description h3 {
+    margin: 0;
+    color: #007BFF; /* You can also change the color of the h3 here if needed */
+}
+
+.benefit-description p {
+    margin: 5px 0 0;
+    color: #555;
+}
