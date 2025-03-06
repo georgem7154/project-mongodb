@@ -22,43 +22,43 @@ const Locations = () => {
       <div className=""></div>
       <div className="w-2/12  h-full">
         <img
-          src={blogItems[7]}
+          src={blogItems[11]}
           alt="placeholder"
-          className="rounded-xl w-full h-full"
+          className="rounded-xl object-cover w-full h-full"
         />
-        <h1 className="justify-end font-montserrat text-center">SINGAPORE</h1>
+        <h1 className="underline font-semibold text-xl italic justify-end font-montserrat text-center">SINGAPORE</h1>
       </div>
       <div className="w-2/12  h-full">
         <img
-          src={blogItems[7]}
+          src={blogItems[10]}
           alt="placeholder"
-          className="rounded-xl w-full h-full"
+          className="rounded-xl object-cover w-full h-full"
         />
-        <h1 className="justify-end font-montserrat text-center">INDIA</h1>
+        <h1 className="underline font-semibold text-xl italic justify-end font-montserrat text-center">INDIA</h1>
       </div>
       <div className="w-2/12  h-full">
         <img
-          src={blogItems[7]}
+          src={blogItems[12]}
           alt="placeholder"
-          className="rounded-xl w-full h-full"
+          className="rounded-xl object-cover w-full h-full"
         />
-        <h1 className="justify-end font-montserrat text-center">PARIS</h1>
+        <h1 className="underline font-semibold text-xl italic justify-end font-montserrat text-center">PARIS</h1>
       </div>
       <div className="w-2/12  h-full">
         <img
-          src={blogItems[7]}
+          src={blogItems[13]}
           alt="placeholder"
-          className="rounded-xl w-full h-full"
+          className="rounded-xl  object-cover w-full h-full"
         />
-        <h1 className="justify-end font-montserrat text-center">JAPAN</h1>
+        <h1 className="underline font-semibold text-xl italic justify-end font-montserrat text-center">JAPAN</h1>
       </div>
       <div className="w-2/12  h-full">
         <img
-          src={blogItems[7]}
+          src={blogItems[14]}
           alt="placeholder"
-          className="rounded-xl w-full h-full"
+          className="rounded-xl object-cover w-full h-full"
         />
-        <h1 className="justify-end font-montserrat text-center">MEXICO</h1>
+        <h1 className="underline font-semibold text-xl italic justify-end font-montserrat text-center">MEXICO</h1>
       </div>
     </div>
   );
