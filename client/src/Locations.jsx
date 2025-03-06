@@ -27,7 +27,7 @@ const Locations = () => {
           className="shadow-lg shadow-slate-500 rounded-xl object-cover w-full h-full"
         />
         <h1 className="underline mt-5 font-semibold text-xl italic justify-end font-montserrat text-center">
-          {blogItems[15]}
+        {blogItems[15]}
         </h1>
       </div>
       <div className="w-2/12 hover:scale-125 hover:font-bold hover:text-2xl hover:text-red-700 h-full">
@@ -37,7 +37,7 @@ const Locations = () => {
           className="shadow-lg shadow-slate-500  rounded-xl object-cover w-full h-full"
         />
         <h1 className="underline font-semibold text-xl italic justify-end font-montserrat mt-5  text-center">
-          {blogItems[16]}
+        {blogItems[16]}
         </h1>
       </div>
       <div className="w-2/12 hover:scale-125 hover:font-bold hover:text-2xl hover:text-red-700 h-full">
@@ -47,7 +47,7 @@ const Locations = () => {
           className="shadow-lg shadow-slate-500  rounded-xl object-cover w-full h-full"
         />
         <h1 className="underline font-semibold text-xl italic justify-end font-montserrat mt-5  text-center">
-          {blogItems[17]}
+        {blogItems[17]}
         </h1>
       </div>
       <div className="w-2/12 hover:scale-125 hover:font-bold hover:text-2xl hover:text-red-700 h-full">
@@ -57,7 +57,7 @@ const Locations = () => {
           className="shadow-lg shadow-slate-500  rounded-xl  object-cover w-full h-full"
         />
         <h1 className="underline font-semibold text-xl italic justify-end font-montserrat mt-5  text-center">
-          {blogItems[18]}
+        {blogItems[18]}
         </h1>
       </div>
       <div className="w-2/12 hover:scale-125 hover:font-bold hover:text-2xl hover:text-red-700 h-full">
@@ -67,7 +67,7 @@ const Locations = () => {
           className="shadow-lg shadow-slate-500  rounded-xl object-cover w-full h-full"
         />
         <h1 className="underline font-semibold text-xl italic justify-end font-montserrat mt-5  text-center">
-          {blogItems[19]}
+        {blogItems[19]}
         </h1>
       </div>
     </div>
