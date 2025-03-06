@@ -7,22 +7,21 @@ const Carousel = () => {
   useEffect(() => {
     axios.get('http://localhost:5000/allblogs')
       .then(response => {
+        console.log(response.data);  // Log the data to verify it's being received
         setBlogs(response.data);
       })
       .catch(error => {
         console.error('There was an error fetching the blogs!', error);
       });
   }, []);
+  
+  // Generate the list of blog items with just the text content
+  const blogItems = blogs.map(blog => blog.text);
 
   return (
     <div>
       <h1>All Blogs</h1>
-      {blogs.map(blog => (
-        <div key={blog._id}>
-          <h2>{blog.title}</h2>
-          <p>{blog.text}</p>
-        </div>
-      ))}
+      <h1>{blogItems[0]}</h1> {/* Render the text of the first blog item */}
     </div>
   );
 };
