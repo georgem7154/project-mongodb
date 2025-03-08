@@ -52,7 +52,7 @@ const Carousel = () => {
       <div className="absolute rounded-full max-md:hidden top-1/2 right-64">
         <button
           onClick={handleRightClick}
-          className="hover:bg-gray-950 bg-gray-500 border-red-200 opacity-70 text-white font-bold py-8 px-8 rounded-full flex items-center"
+          className="hover:bg-gray-950 bg-gray-500 dark:bg-slate-500 dark:hover:bg-lime-200 border-red-200 opacity-70 text-white font-bold py-8 px-8 rounded-full flex items-center"
         >
           <svg className="w-6 h-6" viewBox="0 0 1024 1024" strokeWidth="32" stroke="currentColor" fill="white">
             <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" />
@@ -62,9 +62,9 @@ const Carousel = () => {
       <div className="absolute rounded-full top-1/2 max-md:hidden left-64">
         <button
           onClick={handleLeftClick}
-          className="hover:bg-gray-950 bg-gray-500 border-red-200 opacity-70 text-white font-bold py-8 px-8 rounded-full flex items-center"
+          className="hover:bg-gray-950 bg-gray-500 dark:bg-slate-500 dark:hover:bg-lime-200 border-red-200 opacity-70 text-white font-bold py-8 px-8 rounded-full flex items-center"
         >
-          <svg className="w-6 h-6" viewBox="0 0 1024 1024" strokeWidth="32" stroke="currentColor" fill="white">
+          <svg className="w-6 h-6" viewBox="0 0 1024 1024" strokeWidth="32" stroke="currentColor " fill="white">
             <path d="M768 120.768L717.568 64 256 512l461.568 448L768 903.232 364.928 512z" />
           </svg>
         </button>

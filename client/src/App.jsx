@@ -6,7 +6,7 @@ import Locations from "./Locations";
 
 function App() {
   return (
-    <div className="relative">
+    <div className="relative dark:bg-black">
       <div className="h-32 max-md:hidden"></div>
       <Ribbon />
       <Carousel />
