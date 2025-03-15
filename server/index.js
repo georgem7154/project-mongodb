@@ -4,7 +4,10 @@ const app = express();
 const cors = require('cors');
 app.use(cors());
 
-const dBURI = 'mongodb+srv://george:pRUK5z7wuFRSoxJ1@hiraku.hgijy.mongodb.net/hirakuskies?retryWrites=true&w=majority';
+require('dotenv').config(); 
+const dBURI = process.env.DB_URI;
+
+
 
 mongoose.connect(dBURI)
   .then((result) => app.listen(5000))
