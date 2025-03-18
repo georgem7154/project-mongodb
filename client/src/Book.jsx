@@ -103,10 +103,10 @@ const Book = () => {
       <div className="bg-green-300 dark:bg-pink-800 p-6 rounded-lg shadow-md w-80 mx-auto">
         <h2 className="text-black dark:text-white text-lg mb-4 text-center">{editingId ? "Update Booking" : "Book Your Seat"}</h2>
         <form onSubmit={handleSubmit}>
-          <input type="text" name="cust_name" placeholder="Customer Name" value={formData.cust_name} onChange={handleChange} className="w-full shadow-md shadow-black p-2 mb-2 border rounded" required />
-          <input type="number" name="age" placeholder="Age" value={formData.age} onChange={handleChange} className="w-full p-2 mb-2 border rounded shadow-md shadow-black" required />
-          <input type="text" name="class" placeholder="Class" value={formData.class} onChange={handleChange} className="w-full p-2 mb-4 border rounded shadow-md shadow-black" required />
-          <button type="submit" className="bg-indigo-600 dark:bg-yellow-300 dark:text-black text-white p-2 w-full shadow-lg shadow-black rounded">{editingId ? "Update" : "Submit"}</button>
+          <input type="text" name="cust_name" placeholder="Customer Name" value={formData.cust_name} onChange={handleChange} className="w-full shadow-md hover:scale-105 hover:bg-orange-200 hover:text-green-700 shadow-black p-2 mb-2 border rounded" required />
+          <input type="number" name="age" placeholder="Age" value={formData.age} onChange={handleChange} className="w-full p-2 mb-2 border rounded shadow-md hover:scale-105 shadow-black hover:bg-orange-200 hover:text-green-700" required />
+          <input type="text" name="class" placeholder="Class" value={formData.class} onChange={handleChange} className="w-full p-2 mb-4 border rounded shadow-md hover:scale-105 shadow-black hover:bg-orange-200 hover:text-green-700" required />
+          <button type="submit" className="bg-indigo-600 dark:bg-yellow-300 dark:text-black text-white p-2 w-full shadow-lg  hover:bg-green-600 hover:text-white hover:scale-125 ease-in-out transition shadow-black rounded">{editingId ? "Update" : "Submit"}</button>
         </form>
       </div>
 
@@ -114,7 +114,7 @@ const Book = () => {
       <h2 className="text-lg font-bold mt-6 dark:text-white text-center">All Bookings</h2>
       <ul className="mt-2">
         {bookings.map((booking) => (
-          <li key={booking._id} className="p-2 bg-gray-100 dark:bg-slate-700 dark:text-white mb-2 flex justify-between">
+          <li key={booking._id} className="p-2 bg-gray-100 dark:bg-slate-700 rounded-xl hover:scale-105 dark:text-white mb-2 flex justify-between">
             {booking.cust_name} - {booking.age} - {booking.class}
             <div>
               <button onClick={() => editBooking(booking)} className="bg-yellow-400 dark:bg-yellow-300 dark:text-black text-white px-2 rounded mr-2">Edit</button>
@@ -131,7 +131,7 @@ const Book = () => {
         <button onClick={fetchSameClassBookings} className="bg-purple-500 dark:bg-purple-700 text-white p-2 rounded">Find</button>
         <ul className="mt-2">
           {sameClassBookings.map((booking) => (
-            <li key={booking._id} className="p-2 text-center dark:text-white dark:bg-slate-600 bg-gray-100 mb-2">
+            <li key={booking._id} className="p-2 text-center hover:scale-105 rounded-md dark:text-white dark:bg-slate-600 bg-gray-100 mb-2">
               {booking.cust_name} - {booking.age}
             </li>
           ))}
