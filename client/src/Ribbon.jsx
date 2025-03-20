@@ -41,7 +41,7 @@ const Ribbon = ({ bookRef }) => {
         <div className="rounded-lg font-rogue flex font-bold text-4xl hover:scale-110 hover:shadow-lg hover:shadow-pink-300 hover:bg-opacity-0 transition ease-in-out">
         <span>
         <TypeAnimation
-        className='text-purple-800'
+        className='text-purple-800 dark:text-red-300'
         sequence={[
           'Hiraku Skies',
           1000,
