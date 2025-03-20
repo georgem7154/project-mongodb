@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { TypeAnimation } from "react-type-animation";
 
 const Ribbon = ({ bookRef }) => {
   const [blogs, setBlogs] = useState([]);
@@ -38,7 +39,21 @@ const Ribbon = ({ bookRef }) => {
     <div className="z-40 h-36 top-0 w-full fixed border-2 dark:border-0 max-md:hidden dark:bg-slate-900 dark:text-white bg-white">
       <div className="container mx-auto flex justify-between items-center h-full">
         <div className="rounded-lg font-rogue flex font-bold text-4xl hover:scale-110 hover:shadow-lg hover:shadow-pink-300 hover:bg-opacity-0 transition ease-in-out">
-          {blogItems[0]}
+        <span>
+        <TypeAnimation
+        className='text-purple-800'
+        sequence={[
+          'Hiraku Skies',
+          1000,
+          `ヒラク・スカイズ`,
+          1000,
+        ]}
+        repeat={Infinity}
+        speed={50}
+        cursor={false}
+        deletionSpeed={Infinity}
+        />
+        </span>
         </div>
         <div className="font-montserrat flex font-semibold text-2xl justify-between mr-36 w-7/12 flex-row">
           <button

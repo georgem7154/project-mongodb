@@ -12,7 +12,6 @@ const Book = () => {
   const [sameClassBookings, setSameClassBookings] = useState([]);
   const [editingId, setEditingId] = useState(null);
 
-  // Fetch all bookings
   const fetchBookings = async () => {
     try {
       const response = await fetch("http://localhost:5000/allbookings");
@@ -23,17 +22,14 @@ const Book = () => {
     }
   };
 
-  // Load bookings on component mount
   useEffect(() => {
     fetchBookings();
   }, []);
 
-  // Handle form input changes
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Add or update booking
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -61,7 +57,6 @@ const Book = () => {
     }
   };
 
-  // Remove a booking
   const removeBooking = async (id) => {
     try {
       const response = await fetch(`http://localhost:5000/removebooking/${id}`, { method: "DELETE" });
@@ -76,7 +71,6 @@ const Book = () => {
     }
   };
 
-  // Edit a booking
   const editBooking = (booking) => {
     setFormData({
       cust_name: booking.cust_name,
@@ -86,7 +80,6 @@ const Book = () => {
     setEditingId(booking._id);
   };
 
-  // Find people in the same class
   const fetchSameClassBookings = async () => {
     try {
       const response = await fetch(`http://localhost:5000/sameclass/${classFilter}`);
